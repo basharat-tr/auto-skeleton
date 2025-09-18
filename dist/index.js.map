@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../src/index.ts"],"sourcesContent":["// TypeScript file: /Users/mac/Documents/skeleton-loder-sep/src/index.ts\nexport const placeholder = 'This is a demo build';\nexport default placeholder;"],"names":[],"mappings":";;;;AAAA;AACY,MAAC,WAAW,GAAG;;;;;"}

@@ -1,0 +1,264 @@
+/* CSS Custom Properties for theming */
+:root {
+  --skeleton-base-color: #e2e8f0;
+  --skeleton-highlight-color: #f1f5f9;
+  --skeleton-border-radius: 4px;
+  --skeleton-animation-duration: 1.5s;
+  --skeleton-animation-timing: ease-in-out;
+  --skeleton-wave-timing: linear;
+  --skeleton-opacity-min: 0.4;
+  --skeleton-opacity-max: 1;
+}
+
+/* Dark theme CSS variables */
+[data-skeleton-theme="dark"], 
+[data-theme="dark"], 
+.theme-dark {
+  --skeleton-base-color: #374151;
+  --skeleton-highlight-color: #4b5563;
+}
+
+/* Light theme CSS variables (explicit) */
+[data-skeleton-theme="light"], 
+[data-theme="light"], 
+.theme-light {
+  --skeleton-base-color: #e2e8f0;
+  --skeleton-highlight-color: #f1f5f9;
+}
+
+/* Custom theme support - these will be overridden by inline styles */
+[data-skeleton-theme="custom"], 
+.theme-custom {
+  /* Custom theme values will be set via CSS custom properties */
+}
+
+/* Animation keyframes */
+@keyframes skeleton-pulse {
+  0%, 100% {
+    opacity: var(--skeleton-opacity-max);
+  }
+  50% {
+    opacity: var(--skeleton-opacity-min);
+  }
+}
+
+@keyframes skeleton-wave {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Base skeleton styles */
+.skeleton-primitive {
+  background-color: var(--skeleton-base-color);
+  border-radius: var(--skeleton-border-radius);
+  display: block;
+  position: relative;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+/* Animation classes */
+.skeleton-animation-pulse {
+  animation: skeleton-pulse var(--skeleton-animation-duration) var(--skeleton-animation-timing) infinite;
+}
+
+.skeleton-animation-wave {
+  background: linear-gradient(
+    90deg,
+    var(--skeleton-base-color) 25%,
+    var(--skeleton-highlight-color) 50%,
+    var(--skeleton-base-color) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-wave var(--skeleton-animation-duration) var(--skeleton-wave-timing) infinite;
+}
+
+.skeleton-animation-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-animation-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--skeleton-highlight-color),
+    transparent
+  );
+  animation: skeleton-shimmer var(--skeleton-animation-duration) var(--skeleton-wave-timing) infinite;
+}
+
+.skeleton-animation-none {
+  /* No animation */
+}
+
+/* Shape-specific styles */
+.skeleton-rect {
+  border-radius: var(--skeleton-border-radius);
+}
+
+.skeleton-circle {
+  border-radius: 50%;
+}
+
+.skeleton-line {
+  border-radius: 2px;
+}
+
+/* Responsive utilities */
+.skeleton-primitive {
+  box-sizing: border-box;
+}
+
+/* Accessibility */
+.skeleton-primitive {
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Screen reader only text */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}/* Tailwin
+d CSS compatibility classes */
+.skeleton-gray-200 {
+  --skeleton-base-color: #e5e7eb;
+  --skeleton-highlight-color: #f3f4f6;
+}
+
+.skeleton-gray-300 {
+  --skeleton-base-color: #d1d5db;
+  --skeleton-highlight-color: #e5e7eb;
+}
+
+.skeleton-slate-200 {
+  --skeleton-base-color: #e2e8f0;
+  --skeleton-highlight-color: #f1f5f9;
+}
+
+.skeleton-slate-300 {
+  --skeleton-base-color: #cbd5e1;
+  --skeleton-highlight-color: #e2e8f0;
+}
+
+.skeleton-zinc-200 {
+  --skeleton-base-color: #e4e4e7;
+  --skeleton-highlight-color: #f4f4f5;
+}
+
+.skeleton-neutral-200 {
+  --skeleton-base-color: #e5e5e5;
+  --skeleton-highlight-color: #f5f5f5;
+}
+
+/* Dark theme Tailwind compatibility */
+.skeleton-gray-700 {
+  --skeleton-base-color: #374151;
+  --skeleton-highlight-color: #4b5563;
+}
+
+.skeleton-gray-800 {
+  --skeleton-base-color: #1f2937;
+  --skeleton-highlight-color: #374151;
+}
+
+.skeleton-slate-700 {
+  --skeleton-base-color: #334155;
+  --skeleton-highlight-color: #475569;
+}
+
+.skeleton-zinc-700 {
+  --skeleton-base-color: #3f3f46;
+  --skeleton-highlight-color: #52525b;
+}
+
+/* Animation duration utilities */
+.skeleton-duration-slow {
+  --skeleton-animation-duration: 2s;
+}
+
+.skeleton-duration-normal {
+  --skeleton-animation-duration: 1.5s;
+}
+
+.skeleton-duration-fast {
+  --skeleton-animation-duration: 1s;
+}
+
+/* Border radius utilities */
+.skeleton-rounded-none {
+  --skeleton-border-radius: 0;
+}
+
+.skeleton-rounded-sm {
+  --skeleton-border-radius: 2px;
+}
+
+.skeleton-rounded {
+  --skeleton-border-radius: 4px;
+}
+
+.skeleton-rounded-md {
+  --skeleton-border-radius: 6px;
+}
+
+.skeleton-rounded-lg {
+  --skeleton-border-radius: 8px;
+}
+
+.skeleton-rounded-xl {
+  --skeleton-border-radius: 12px;
+}
+
+.skeleton-rounded-full {
+  --skeleton-border-radius: 50%;
+}
+
+/* Performance optimizations */
+.skeleton-primitive {
+  will-change: opacity, background-position, transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-animation-pulse,
+  .skeleton-animation-wave,
+  .skeleton-animation-shimmer {
+    animation: none;
+  }
+  
+  .skeleton-animation-shimmer::after {
+    animation: none;
+  }
+}

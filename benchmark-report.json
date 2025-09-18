@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-09-18T09:59:31.031Z",
+  "bundleAnalysis": {
+    "totalSize": 41900,
+    "gzippedSize": 12570,
+    "modules": {
+      "core": 25000,
+      "buildTime": 8000,
+      "mapping": 1900,
+      "animations": 4000,
+      "themes": 3000
+    },
+    "treeShakenSize": 30000,
+    "unusedModules": [
+      "buildTimeGenerator",
+      "mappingRules.avatar"
+    ]
+  },
+  "treeShakinAnalysis": {
+    "coreOnly": {
+      "removedModules": [],
+      "sizeReduction": 0,
+      "optimizedSize": 41900
+    },
+    "full": {
+      "removedModules": [],
+      "sizeReduction": 0,
+      "optimizedSize": 41900
+    }
+  },
+  "performanceBenchmarks": {
+    "scanning": {
+      "averageTime": 118.9,
+      "minTime": 114,
+      "maxTime": 127,
+      "totalTime": 1189
+    },
+    "rendering": {
+      "averageTime": 2.65,
+      "minTime": 0,
+      "maxTime": 5,
+      "totalTime": 53
+    }
+  },
+  "memoryAnalysis": {
+    "initialMemory": 4196720,
+    "finalMemory": 4357616,
+    "memoryIncrease": 160896,
+    "averagePerSpec": 160.896
+  },
+  "recommendations": [
+    "Bundle size is optimal for a skeleton loader library",
+    "Tree-shaking is working effectively",
+    "Animation performance is excellent",
+    "Consider using static specs for better performance"
+  ]
+}

@@ -1,0 +1,807 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Skeleton Markup Snapshots > Complex skeleton compositions > should render consistent card-like skeleton 1`] = `
+<div
+  aria-busy="true"
+  aria-label="Loading content..."
+  aria-live="polite"
+  class="dynamic-skeleton"
+  role="status"
+  style="pointer-events: none; user-select: none; outline: none;"
+  tabindex="-1"
+>
+  <span
+    aria-hidden="true"
+    class="sr-only"
+  >
+    Loading content...
+  </span>
+  <div
+    class="dynamic-skeleton-container stack"
+    style="display: flex; flex-direction: column; gap: 0.5rem;"
+  >
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-rect skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 100%; height: 200px; border-radius: 8px 8px 0 0; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 80%; height: 24px; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+    <div
+      aria-hidden="true"
+      class="skeleton-lines"
+      role="presentation"
+      style="display: block; position: relative; width: 100%; height: 16px; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    >
+      <div
+        aria-hidden="true"
+        class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+        role="presentation"
+        style="width: 100%; height: 16px; border-radius: 2px; margin-bottom: 0.5em;"
+        tabindex="-1"
+      />
+      <div
+        aria-hidden="true"
+        class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+        role="presentation"
+        style="width: 75%; height: 16px; border-radius: 2px; margin-bottom: 0px;"
+        tabindex="-1"
+      />
+    </div>
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-rect skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 100px; height: 36px; border-radius: 4px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+  </div>
+</div>
+`;
+
+exports[`Skeleton Markup Snapshots > Complex skeleton compositions > should render consistent list item skeleton 1`] = `
+<div
+  aria-busy="true"
+  aria-label="Loading content..."
+  aria-live="polite"
+  class="dynamic-skeleton"
+  role="status"
+  style="pointer-events: none; user-select: none; outline: none;"
+  tabindex="-1"
+>
+  <span
+    aria-hidden="true"
+    class="sr-only"
+  >
+    Loading content...
+  </span>
+  <div
+    class="dynamic-skeleton-container stack"
+    style="display: flex; flex-direction: column; gap: 0.5rem;"
+  >
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-circle skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 24px; height: 24px; border-radius: 50%; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 200px; height: 18px; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 150px; height: 14px; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-rect skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 60px; height: 28px; border-radius: 14px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+  </div>
+</div>
+`;
+
+exports[`Skeleton Markup Snapshots > Complex skeleton compositions > should render consistent profile skeleton 1`] = `
+<div
+  aria-busy="true"
+  aria-label="Loading content..."
+  aria-live="polite"
+  class="dynamic-skeleton"
+  role="status"
+  style="pointer-events: none; user-select: none; outline: none;"
+  tabindex="-1"
+>
+  <span
+    aria-hidden="true"
+    class="sr-only"
+  >
+    Loading content...
+  </span>
+  <div
+    class="dynamic-skeleton-container stack"
+    style="display: flex; flex-direction: column; gap: 0.5rem;"
+  >
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-circle skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 80px; height: 80px; border-radius: 50%; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 150px; height: 20px; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 120px; height: 16px; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+    <div
+      aria-hidden="true"
+      class="skeleton-lines"
+      role="presentation"
+      style="display: block; position: relative; width: 300px; height: 14px; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    >
+      <div
+        aria-hidden="true"
+        class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+        role="presentation"
+        style="width: 100%; height: 14px; border-radius: 2px; margin-bottom: 0.5em;"
+        tabindex="-1"
+      />
+      <div
+        aria-hidden="true"
+        class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+        role="presentation"
+        style="width: 100%; height: 14px; border-radius: 2px; margin-bottom: 0.5em;"
+        tabindex="-1"
+      />
+      <div
+        aria-hidden="true"
+        class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+        role="presentation"
+        style="width: 75%; height: 14px; border-radius: 2px; margin-bottom: 0px;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Skeleton Markup Snapshots > Complex skeleton compositions > should render consistent table row skeleton 1`] = `
+<div
+  aria-busy="true"
+  aria-label="Loading content..."
+  aria-live="polite"
+  class="dynamic-skeleton"
+  role="status"
+  style="pointer-events: none; user-select: none; outline: none;"
+  tabindex="-1"
+>
+  <span
+    aria-hidden="true"
+    class="sr-only"
+  >
+    Loading content...
+  </span>
+  <div
+    class="dynamic-skeleton-container stack"
+    style="display: flex; flex-direction: column; gap: 0.5rem;"
+  >
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 100px; height: 16px; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 150px; height: 16px; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 80px; height: 16px; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-rect skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 70px; height: 24px; border-radius: 4px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+  </div>
+</div>
+`;
+
+exports[`Skeleton Markup Snapshots > DynamicSkeleton snapshots > should render consistent skeleton from renderSpec 1`] = `
+<div
+  aria-busy="true"
+  aria-label="Loading content..."
+  aria-live="polite"
+  class="dynamic-skeleton"
+  role="status"
+  style="pointer-events: none; user-select: none; outline: none;"
+  tabindex="-1"
+>
+  <span
+    aria-hidden="true"
+    class="sr-only"
+  >
+    Loading content...
+  </span>
+  <div
+    class="dynamic-skeleton-container stack"
+    style="display: flex; flex-direction: column; gap: 0.5rem;"
+  >
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 60%; height: 24px; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+    <div
+      aria-hidden="true"
+      class="skeleton-lines"
+      role="presentation"
+      style="display: block; position: relative; width: 100%; height: 16px; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    >
+      <div
+        aria-hidden="true"
+        class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+        role="presentation"
+        style="width: 100%; height: 16px; border-radius: 2px; margin-bottom: 0.5em;"
+        tabindex="-1"
+      />
+      <div
+        aria-hidden="true"
+        class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+        role="presentation"
+        style="width: 100%; height: 16px; border-radius: 2px; margin-bottom: 0.5em;"
+        tabindex="-1"
+      />
+      <div
+        aria-hidden="true"
+        class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+        role="presentation"
+        style="width: 75%; height: 16px; border-radius: 2px; margin-bottom: 0px;"
+        tabindex="-1"
+      />
+    </div>
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-rect skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 120px; height: 40px; border-radius: 6px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-circle skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 50px; height: 50px; border-radius: 50%; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+  </div>
+</div>
+`;
+
+exports[`Skeleton Markup Snapshots > DynamicSkeleton snapshots > should render consistent skeleton with custom aria label 1`] = `
+<div
+  aria-busy="true"
+  aria-label="Loading user profile"
+  aria-live="polite"
+  class="dynamic-skeleton"
+  role="status"
+  style="pointer-events: none; user-select: none; outline: none;"
+  tabindex="-1"
+>
+  <span
+    aria-hidden="true"
+    class="sr-only"
+  >
+    Loading user profile
+  </span>
+  <div
+    class="dynamic-skeleton-container stack"
+    style="display: flex; flex-direction: column; gap: 0.5rem;"
+  >
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-rect skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 300px; height: 100px; border-radius: var(--skeleton-border-radius, 4px); --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+  </div>
+</div>
+`;
+
+exports[`Skeleton Markup Snapshots > DynamicSkeleton snapshots > should render consistent skeleton with custom className and styles 1`] = `
+<div
+  aria-busy="true"
+  aria-label="Loading content..."
+  aria-live="polite"
+  class="dynamic-skeleton custom-skeleton-wrapper"
+  role="status"
+  style="pointer-events: none; user-select: none; outline: none; padding: 20px; background-color: rgb(245, 245, 245);"
+  tabindex="-1"
+>
+  <span
+    aria-hidden="true"
+    class="sr-only"
+  >
+    Loading content...
+  </span>
+  <div
+    class="dynamic-skeleton-container stack"
+    style="display: flex; flex-direction: column; gap: 0.5rem;"
+  >
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-rect skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 200px; height: 80px; border-radius: var(--skeleton-border-radius, 4px); --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+  </div>
+</div>
+`;
+
+exports[`Skeleton Markup Snapshots > DynamicSkeleton snapshots > should render consistent skeleton with custom theme 1`] = `
+<div
+  aria-busy="true"
+  aria-label="Loading content..."
+  aria-live="polite"
+  class="dynamic-skeleton"
+  role="status"
+  style="pointer-events: none; user-select: none; outline: none;"
+  tabindex="-1"
+>
+  <span
+    aria-hidden="true"
+    class="sr-only"
+  >
+    Loading content...
+  </span>
+  <div
+    class="dynamic-skeleton-container stack"
+    style="display: flex; flex-direction: column; gap: 0.5rem;"
+  >
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-rect skeleton-animation-pulse theme-dark skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 100%; height: 200px; border-radius: var(--skeleton-border-radius, 4px);"
+      tabindex="-1"
+    />
+  </div>
+</div>
+`;
+
+exports[`Skeleton Markup Snapshots > DynamicSkeleton snapshots > should render error state consistently 1`] = `
+<div
+  aria-busy="true"
+  aria-label="Loading content..."
+  aria-live="polite"
+  class="dynamic-skeleton dynamic-skeleton-error"
+  role="status"
+  style="pointer-events: none; user-select: none; outline: none;"
+  tabindex="-1"
+>
+  <span
+    aria-hidden="true"
+    class="sr-only"
+  >
+    Loading content...
+  </span>
+  <div
+    style="padding: 1rem; color: rgb(239, 68, 68); background-color: rgb(254, 242, 242); border-radius: 4px;"
+  >
+    Failed to generate skeleton: 
+    Invalid skeleton specification: Child at index 0 is missing required 'key' property
+  </div>
+</div>
+`;
+
+exports[`Skeleton Markup Snapshots > Responsive skeleton snapshots > should render consistent skeleton with percentage widths 1`] = `
+<div
+  aria-busy="true"
+  aria-label="Loading content..."
+  aria-live="polite"
+  class="dynamic-skeleton"
+  role="status"
+  style="pointer-events: none; user-select: none; outline: none;"
+  tabindex="-1"
+>
+  <span
+    aria-hidden="true"
+    class="sr-only"
+  >
+    Loading content...
+  </span>
+  <div
+    class="dynamic-skeleton-container stack"
+    style="display: flex; flex-direction: column; gap: 0.5rem;"
+  >
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 100%; height: 2rem; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+    <div
+      aria-hidden="true"
+      class="skeleton-lines"
+      role="presentation"
+      style="display: block; position: relative; width: 100%; height: 1rem; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    >
+      <div
+        aria-hidden="true"
+        class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+        role="presentation"
+        style="width: 100%; height: 1rem; border-radius: 2px; margin-bottom: 0.5em;"
+        tabindex="-1"
+      />
+      <div
+        aria-hidden="true"
+        class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+        role="presentation"
+        style="width: 100%; height: 1rem; border-radius: 2px; margin-bottom: 0.5em;"
+        tabindex="-1"
+      />
+      <div
+        aria-hidden="true"
+        class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+        role="presentation"
+        style="width: 100%; height: 1rem; border-radius: 2px; margin-bottom: 0.5em;"
+        tabindex="-1"
+      />
+      <div
+        aria-hidden="true"
+        class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+        role="presentation"
+        style="width: 75%; height: 1rem; border-radius: 2px; margin-bottom: 0px;"
+        tabindex="-1"
+      />
+    </div>
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-rect skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 25%; height: 300px; border-radius: var(--skeleton-border-radius, 4px); --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+  </div>
+</div>
+`;
+
+exports[`Skeleton Markup Snapshots > Responsive skeleton snapshots > should render consistent skeleton with rem units 1`] = `
+<div
+  aria-busy="true"
+  aria-label="Loading content..."
+  aria-live="polite"
+  class="dynamic-skeleton"
+  role="status"
+  style="pointer-events: none; user-select: none; outline: none;"
+  tabindex="-1"
+>
+  <span
+    aria-hidden="true"
+    class="sr-only"
+  >
+    Loading content...
+  </span>
+  <div
+    class="dynamic-skeleton-container stack"
+    style="display: flex; flex-direction: column; gap: 0.5rem;"
+  >
+    <div
+      aria-hidden="true"
+      class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+      role="presentation"
+      style="display: block; position: relative; width: 20rem; height: 1.5rem; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    />
+    <div
+      aria-hidden="true"
+      class="skeleton-lines"
+      role="presentation"
+      style="display: block; position: relative; width: 30rem; height: 1rem; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+      tabindex="-1"
+    >
+      <div
+        aria-hidden="true"
+        class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+        role="presentation"
+        style="width: 100%; height: 1rem; border-radius: 2px; margin-bottom: 0.5em;"
+        tabindex="-1"
+      />
+      <div
+        aria-hidden="true"
+        class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+        role="presentation"
+        style="width: 75%; height: 1rem; border-radius: 2px; margin-bottom: 0px;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Skeleton Markup Snapshots > SkeletonLine snapshots > should render consistent multi-line markup 1`] = `
+<div
+  aria-hidden="true"
+  class="skeleton-lines"
+  tabindex="-1"
+>
+  <div
+    aria-hidden="true"
+    class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal skeleton-line"
+    role="presentation"
+    style="display: block; position: relative; width: 300px; height: 18px; border-radius: 2px; margin-bottom: 6px;"
+    tabindex="-1"
+  />
+  <div
+    aria-hidden="true"
+    class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal skeleton-line"
+    role="presentation"
+    style="display: block; position: relative; width: 300px; height: 18px; border-radius: 2px; margin-bottom: 6px;"
+    tabindex="-1"
+  />
+  <div
+    aria-hidden="true"
+    class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal skeleton-line"
+    role="presentation"
+    style="display: block; position: relative; width: 300px; height: 18px; border-radius: 2px; margin-bottom: 6px;"
+    tabindex="-1"
+  />
+  <div
+    aria-hidden="true"
+    class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal skeleton-line"
+    role="presentation"
+    style="display: block; position: relative; width: 70%; height: 18px; border-radius: 2px; margin-bottom: 0px;"
+    tabindex="-1"
+  />
+</div>
+`;
+
+exports[`Skeleton Markup Snapshots > SkeletonLine snapshots > should render consistent single line markup 1`] = `
+<div
+  aria-hidden="true"
+  class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal skeleton-line-single"
+  role="presentation"
+  style="display: block; position: relative; width: 200px; height: 20px; border-radius: 2px;"
+  tabindex="-1"
+/>
+`;
+
+exports[`Skeleton Markup Snapshots > SkeletonLine snapshots > should render with custom spacing 1`] = `
+<div
+  aria-hidden="true"
+  class="skeleton-lines"
+  tabindex="-1"
+>
+  <div
+    aria-hidden="true"
+    class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal skeleton-line"
+    role="presentation"
+    style="display: block; position: relative; width: 250px; height: 16px; border-radius: 2px; margin-bottom: 8px;"
+    tabindex="-1"
+  />
+  <div
+    aria-hidden="true"
+    class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal skeleton-line"
+    role="presentation"
+    style="display: block; position: relative; width: 250px; height: 16px; border-radius: 2px; margin-bottom: 8px;"
+    tabindex="-1"
+  />
+  <div
+    aria-hidden="true"
+    class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal skeleton-line"
+    role="presentation"
+    style="display: block; position: relative; width: 75%; height: 16px; border-radius: 2px; margin-bottom: 0px;"
+    tabindex="-1"
+  />
+</div>
+`;
+
+exports[`Skeleton Markup Snapshots > SkeletonLine snapshots > should render with theme and animation 1`] = `
+<div
+  aria-hidden="true"
+  class="skeleton-lines"
+  tabindex="-1"
+>
+  <div
+    aria-hidden="true"
+    class="skeleton-primitive skeleton-line skeleton-animation-wave theme-dark skeleton-duration-normal skeleton-line"
+    role="presentation"
+    style="display: block; position: relative; width: 100%; height: 1em; border-radius: 2px; margin-bottom: 0.5em;"
+    tabindex="-1"
+  />
+  <div
+    aria-hidden="true"
+    class="skeleton-primitive skeleton-line skeleton-animation-wave theme-dark skeleton-duration-normal skeleton-line"
+    role="presentation"
+    style="display: block; position: relative; width: 75%; height: 1em; border-radius: 2px; margin-bottom: 0px;"
+    tabindex="-1"
+  />
+</div>
+`;
+
+exports[`Skeleton Markup Snapshots > SkeletonPrimitive snapshots > should render consistent circle primitive markup 1`] = `
+<div
+  aria-hidden="true"
+  class="skeleton-primitive skeleton-circle skeleton-animation-pulse theme-light skeleton-duration-normal"
+  role="presentation"
+  style="display: block; position: relative; width: 50px; height: 50px; border-radius: 50%; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+  tabindex="-1"
+/>
+`;
+
+exports[`Skeleton Markup Snapshots > SkeletonPrimitive snapshots > should render consistent line primitive markup 1`] = `
+<div
+  aria-hidden="true"
+  class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+  role="presentation"
+  style="display: block; position: relative; width: 300px; height: 16px; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+  tabindex="-1"
+/>
+`;
+
+exports[`Skeleton Markup Snapshots > SkeletonPrimitive snapshots > should render consistent multi-line primitive markup 1`] = `
+<div
+  aria-hidden="true"
+  class="skeleton-lines"
+  role="presentation"
+  style="display: block; position: relative; width: 250px; height: 18px; border-radius: 2px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+  tabindex="-1"
+>
+  <div
+    aria-hidden="true"
+    class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+    role="presentation"
+    style="width: 100%; height: 18px; border-radius: 2px; margin-bottom: 0.5em;"
+    tabindex="-1"
+  />
+  <div
+    aria-hidden="true"
+    class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+    role="presentation"
+    style="width: 100%; height: 18px; border-radius: 2px; margin-bottom: 0.5em;"
+    tabindex="-1"
+  />
+  <div
+    aria-hidden="true"
+    class="skeleton-primitive skeleton-line skeleton-animation-pulse theme-light skeleton-duration-normal"
+    role="presentation"
+    style="width: 75%; height: 18px; border-radius: 2px; margin-bottom: 0px;"
+    tabindex="-1"
+  />
+</div>
+`;
+
+exports[`Skeleton Markup Snapshots > SkeletonPrimitive snapshots > should render consistent rect primitive markup 1`] = `
+<div
+  aria-hidden="true"
+  class="skeleton-primitive skeleton-rect skeleton-animation-pulse theme-light skeleton-duration-normal"
+  role="presentation"
+  style="display: block; position: relative; width: 200px; height: 100px; border-radius: var(--skeleton-border-radius, 4px); --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+  tabindex="-1"
+/>
+`;
+
+exports[`Skeleton Markup Snapshots > SkeletonPrimitive snapshots > should render rect with custom border radius 1`] = `
+<div
+  aria-hidden="true"
+  class="skeleton-primitive skeleton-rect skeleton-animation-pulse theme-light skeleton-duration-normal"
+  role="presentation"
+  style="display: block; position: relative; width: 120px; height: 40px; border-radius: 8px; --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+  tabindex="-1"
+/>
+`;
+
+exports[`Skeleton Markup Snapshots > SkeletonPrimitive snapshots > should render with custom className and styles 1`] = `
+<div
+  aria-hidden="true"
+  class="skeleton-primitive skeleton-rect skeleton-animation-pulse theme-light skeleton-duration-normal custom-skeleton"
+  role="presentation"
+  style="display: block; position: relative; width: 100px; height: 50px; border-radius: var(--skeleton-border-radius, 4px); --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px; margin: 10px; opacity: 0.7;"
+  tabindex="-1"
+/>
+`;
+
+exports[`Skeleton Markup Snapshots > SkeletonPrimitive snapshots > should render with custom theme 1`] = `
+<div
+  aria-hidden="true"
+  class="skeleton-primitive skeleton-rect skeleton-animation-pulse skeleton-duration-normal"
+  role="presentation"
+  style="display: block; position: relative; width: 100px; height: 50px; border-radius: var(--skeleton-border-radius, 4px); --skeleton-base-color: #ff6b6b; --skeleton-highlight-color: #ffa8a8;"
+  tabindex="-1"
+/>
+`;
+
+exports[`Skeleton Markup Snapshots > SkeletonPrimitive snapshots > should render with dark theme 1`] = `
+<div
+  aria-hidden="true"
+  class="skeleton-primitive skeleton-rect skeleton-animation-pulse theme-dark skeleton-duration-normal"
+  role="presentation"
+  style="display: block; position: relative; width: 100px; height: 50px; border-radius: var(--skeleton-border-radius, 4px);"
+  tabindex="-1"
+/>
+`;
+
+exports[`Skeleton Markup Snapshots > SkeletonPrimitive snapshots > should render with light theme 1`] = `
+<div
+  aria-hidden="true"
+  class="skeleton-primitive skeleton-rect skeleton-animation-pulse theme-light skeleton-duration-normal"
+  role="presentation"
+  style="display: block; position: relative; width: 100px; height: 50px; border-radius: var(--skeleton-border-radius, 4px);"
+  tabindex="-1"
+/>
+`;
+
+exports[`Skeleton Markup Snapshots > SkeletonPrimitive snapshots > should render with no animation 1`] = `
+<div
+  aria-hidden="true"
+  class="skeleton-primitive skeleton-rect theme-light skeleton-duration-normal"
+  role="presentation"
+  style="display: block; position: relative; width: 100px; height: 50px; border-radius: var(--skeleton-border-radius, 4px); --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+  tabindex="-1"
+/>
+`;
+
+exports[`Skeleton Markup Snapshots > SkeletonPrimitive snapshots > should render with pulse animation 1`] = `
+<div
+  aria-hidden="true"
+  class="skeleton-primitive skeleton-rect skeleton-animation-pulse theme-light skeleton-duration-normal"
+  role="presentation"
+  style="display: block; position: relative; width: 100px; height: 50px; border-radius: var(--skeleton-border-radius, 4px); --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+  tabindex="-1"
+/>
+`;
+
+exports[`Skeleton Markup Snapshots > SkeletonPrimitive snapshots > should render with wave animation 1`] = `
+<div
+  aria-hidden="true"
+  class="skeleton-primitive skeleton-rect skeleton-animation-wave theme-light skeleton-duration-normal"
+  role="presentation"
+  style="display: block; position: relative; width: 100px; height: 50px; border-radius: var(--skeleton-border-radius, 4px); --skeleton-base-color: #e2e8f0; --skeleton-highlight-color: #f1f5f9; --skeleton-animation-duration: 1.5s; --skeleton-border-radius: 4px;"
+  tabindex="-1"
+/>
+`;
