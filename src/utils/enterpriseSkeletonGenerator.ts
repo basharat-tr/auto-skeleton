@@ -277,7 +277,7 @@ export const SKELETON_SPECS = {
 
 // Register pre-defined specs
 Object.entries(SKELETON_SPECS).forEach(([name, spec]) => {
-    skeletonRegistry.register(name, spec);
+    skeletonRegistry.register(name, spec as any);
 });
 
 // Utility functions for enterprise use
@@ -302,7 +302,7 @@ export const getSkeletonSpec = (name: string): SkeletonSpec => {
     const spec = skeletonRegistry.get(name);
     if (!spec) {
         console.warn(`Skeleton spec '${name}' not found, using default`);
-        return SKELETON_SPECS.ProductCard; // Default fallback
+        return SKELETON_SPECS.ProductCard as any; // Default fallback
     }
     return spec;
 };

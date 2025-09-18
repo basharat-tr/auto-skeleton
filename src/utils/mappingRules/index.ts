@@ -4,10 +4,10 @@
  */
 
 export * from './avatar';
-export * from './button';
+// export * from './button';
 export * from './heading';
 export * from './paragraph';
-export * from './media';
+// export * from './media';
 export * from './badge';
 
 // Re-export for backward compatibility

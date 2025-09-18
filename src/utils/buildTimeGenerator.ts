@@ -90,7 +90,7 @@ const collectAllElements = (root: TestRenderer.ReactTestInstance): ElementMetada
 
   htmlTags.forEach(tag => {
     try {
-      const instances = root.findAllByType(tag);
+      const instances = root.findAllByType(tag as any);
       instances.forEach((instance, index) => {
         const metadata = convertTestInstanceToElementMetadata(instance, elements.length);
         elements.push(metadata);

@@ -60,8 +60,7 @@ export {
     SKELETON_SPECS,
     createSkeletonSpec,
     getSkeletonSpec,
-    generateComponentSpec,
-    validateSkeletonSpec
+    generateComponentSpec
 } from './utils/enterpriseSkeletonGenerator';
 
 // Enterprise component utilities
