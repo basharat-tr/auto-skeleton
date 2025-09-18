@@ -2,8 +2,8 @@
 // Skip DOM-related imports and mocks for now
 
 // Polyfill for Node.js environment
-Object.assign(global, {
-    globalThis: global,
+Object.assign(globalThis, {
+    globalThis: globalThis,
     TextEncoder: TextEncoder,
     TextDecoder: TextDecoder,
 });
@@ -21,14 +21,14 @@ if (typeof window !== 'undefined') {
     });
 
     // Mock ResizeObserver
-    global.ResizeObserver = class ResizeObserver {
+    (globalThis as any).ResizeObserver = class ResizeObserver {
         observe() { }
         unobserve() { }
         disconnect() { }
     };
 
     // Mock IntersectionObserver
-    (global as any).IntersectionObserver = class IntersectionObserver {
+    (globalThis as any).IntersectionObserver = class IntersectionObserver {
         constructor() { }
         observe() { }
         unobserve() { }
