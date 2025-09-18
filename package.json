@@ -1,6 +1,6 @@
 {
   "name": "dynamic-skeleton-loader",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "description": "Enterprise-grade React skeleton loader with build-time generation and zero runtime overhead",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
