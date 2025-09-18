@@ -1,0 +1,169 @@
+name: Publish to GitHub Packages
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to publish (e.g., 1.0.1)'
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+          - prerelease
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@basharat-tr'
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test -- --run
+
+      - name: Run type checking
+        run: npm run type-check
+
+      - name: Build package
+        run: npm run build
+
+      - name: Update version (if manual trigger)
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          npm version ${{ github.event.inputs.version }} --no-git-tag-version
+          echo "NEW_VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_ENV
+
+      - name: Get version from release (if release trigger)
+        if: github.event_name == 'release'
+        run: |
+          echo "NEW_VERSION=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
+
+      - name: Update package.json for GitHub Packages
+        run: |
+          node -e "
+            const pkg = require('./package.json');
+            pkg.name = '@basharat-tr/auto-skeleton';
+            pkg.publishConfig = {
+              registry: 'https://npm.pkg.github.com',
+              access: 'public'
+            };
+            pkg.repository = {
+              type: 'git',
+              url: 'git+https://github.com/basharat-tr/auto-skeleton.git'
+            };
+            require('fs').writeFileSync('package.json', JSON.stringify(pkg, null, 2));
+          "
+
+      - name: Publish to GitHub Packages
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create GitHub Release (if manual trigger)
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ env.NEW_VERSION }}
+          release_name: Release v${{ env.NEW_VERSION }}
+          body: |
+            ## 🚀 Dynamic Skeleton Loader v${{ env.NEW_VERSION }}
+            
+            ### Features
+            - Enterprise-grade skeleton loader with build-time generation
+            - Zero runtime overhead with pre-computed specifications
+            - HOC pattern for automatic skeleton wrapping
+            - Priority loading for performance optimization
+            - Tree-shakeable imports (12KB gzipped)
+            
+            ### Installation
+            ```bash
+            npm install @basharat-tr/auto-skeleton
+            ```
+            
+            ### Quick Start
+            ```jsx
+            import { DynamicSkeleton, createSkeletonSpec } from '@basharat-tr/auto-skeleton';
+            
+            const SKELETON = createSkeletonSpec('MyComponent', [
+              { key: 'title', shape: 'line', width: '80%', height: '1.5rem' },
+              { key: 'button', shape: 'rect', width: '120px', height: '40px' }
+            ]);
+            
+            function MyComponent({ loading }) {
+              if (loading) return <DynamicSkeleton componentName="MyComponent" />;
+              return <div>{/* content */}</div>;
+            }
+            ```
+            
+            ### Documentation
+            - [Usage Guide](https://github.com/basharat-tr/auto-skeleton/blob/main/HOW_TO_USE.md)
+            - [Enterprise Examples](https://github.com/basharat-tr/auto-skeleton/blob/main/PACKAGE_USAGE_EXAMPLES.md)
+            - [Quick Start](https://github.com/basharat-tr/auto-skeleton/blob/main/QUICK_START.md)
+          draft: false
+          prerelease: false
+
+      - name: Update README with installation instructions
+        run: |
+          sed -i 's/npm install dynamic-skeleton-loader/npm install @basharat-tr\/auto-skeleton/g' README.md
+          sed -i 's/yarn add dynamic-skeleton-loader/yarn add @basharat-tr\/auto-skeleton/g' README.md
+          sed -i 's/pnpm add dynamic-skeleton-loader/pnpm add @basharat-tr\/auto-skeleton/g' README.md
+
+      - name: Commit updated files
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          git add package.json README.md
+          git commit -m "chore: update package version to v${{ env.NEW_VERSION }}" || exit 0
+          git push origin master
+
+      - name: Generate package summary
+        run: |
+          echo "## 📦 Package Published Successfully!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Package:** \`@basharat-tr/auto-skeleton@${{ env.NEW_VERSION }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "**Registry:** GitHub Packages" >> $GITHUB_STEP_SUMMARY
+          echo "**Size:** ~12KB gzipped" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Installation" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`bash" >> $GITHUB_STEP_SUMMARY
+          echo "npm install @basharat-tr/auto-skeleton" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Quick Start" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`jsx" >> $GITHUB_STEP_SUMMARY
+          echo "import { DynamicSkeleton } from '@basharat-tr/auto-skeleton';" >> $GITHUB_STEP_SUMMARY
+          echo "<DynamicSkeleton componentName=\"ProductCard\" />" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
